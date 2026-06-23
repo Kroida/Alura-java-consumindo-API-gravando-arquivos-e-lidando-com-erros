@@ -14,7 +14,7 @@ public class Main {
         System.out.println("Digite um livro para busca");
         var busca = scanner.nextLine();
 
-        String endereco = "https://www.googleapis.com/books/v1/volumes/?q=" + busca.replace(" ", "+") + "&key=AIzaSyCkpmIw3vJCv1S5eXscrKrqoyQ6mxRk_0U";;
+        String endereco = "https://www.googleapis.com/books/v1/volumes/?q=" + busca.replace(" ", "+") + "&key=";;
 
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
